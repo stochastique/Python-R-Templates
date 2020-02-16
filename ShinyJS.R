@@ -4,8 +4,8 @@ library(shinyjs)
 ui <- fluidPage(
     useShinyjs(),
     tags$head(
-        tags$script(src = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"),#(src = "https://unpkg.com/vue/dist/vue.js"),
-        tags$script(src = "https://surveyjs.azureedge.net/1.1.13/survey.jquery.min.js"),#(src = "https://surveyjs.azureedge.net/1.1.13/survey.vue.min.js"),
+        tags$script(src = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"),
+        tags$script(src = "https://surveyjs.azureedge.net/1.1.13/survey.jquery.min.js"),
         tags$link(href="https://surveyjs.azureedge.net/1.1.13/survey.css" ,type="text/css" ,rel="stylesheet")
     ),
     tags$body(
@@ -49,4 +49,4 @@ $("#surveyContainer").Survey({
 }
 
 
-shinyApp(ui, server)## 
+shinyApp(ui, server)
